@@ -31,7 +31,17 @@ footer{border-top:1px solid var(--line);padding:38px 0;margin-top:30px;color:#66
 @media(max-width:900px){.navlinks{position:absolute;display:none;top:70px;left:15px;right:15px;background:#0d0d11;border:1px solid var(--line);border-radius:15px;padding:10px;flex-direction:column;align-items:stretch}.navlinks.open{display:flex}.navlinks a{padding:10px}.hamb{display:block}.hero-inner{grid-template-columns:1fr}.visual{min-height:480px}.services{grid-template-columns:repeat(2,1fr)}.pricing-grid{grid-template-columns:1fr}.process{grid-template-columns:repeat(2,1fr)}.contact{grid-template-columns:1fr}.why{grid-template-columns:repeat(2,1fr)}}
 @media(max-width:600px){.wrap{padding:0 18px}.section{padding:70px 0}.hero-inner{padding-top:28px;padding-bottom:40px;gap:24px}.hero h1{font-size:46px;margin:18px 0}.hero p{font-size:15px;line-height:1.55}.actions{margin:22px 0;gap:9px}.btn{padding:13px 15px}.proof{gap:12px;font-size:10px}.visual{min-height:355px;margin-top:2px}.poster{width:270px;height:345px;padding:20px;border-radius:20px}.poster-title{font-size:37px}.f1{left:0;top:45px}.f2{right:0;bottom:50px}.float{padding:10px 11px;font-size:9px}.metrics{grid-template-columns:repeat(2,1fr)}.metric:nth-child(2){border:0}.services,.process,.why{grid-template-columns:1fr}.works{grid-template-columns:1fr}.work,.work.wide{grid-column:span 1;height:250px}.work strong{font-size:34px}.nav{height:68px}.logo-mark{width:35px;height:35px}}
 </style>
-</head>
+<style>
+.image-work{padding:0;background:#09090c;min-height:360px}
+.image-work img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;display:block;transition:transform .45s ease;z-index:0}
+.image-work:hover img{transform:scale(1.035)}
+.image-work:before{display:none}
+.image-work:after{content:"";position:absolute;inset:45% 0 0;background:linear-gradient(transparent,rgba(0,0,0,.82));z-index:1}
+.work-overlay{position:absolute;left:18px;right:18px;bottom:18px;z-index:2;display:flex;flex-direction:column;gap:7px}
+.work-overlay small{font-size:9px;letter-spacing:.15em;color:#d9d9e2}
+.work-overlay strong{font:800 28px/.95 Manrope;letter-spacing:-.04em;color:#fff}
+@media(max-width:760px){.image-work,.image-work.wide{grid-column:span 12;height:390px;min-height:390px}.work-overlay strong{font-size:25px}}
+</style></head>
 <body>
 <header class="nav"><div class="wrap" style="width:100%;display:flex;justify-content:space-between;align-items:center">
 <a class="logo" href="#home"><span class="logo-mark">R</span>Ravi <b>AI</b> Studio</a>
@@ -65,14 +75,14 @@ footer{border-top:1px solid var(--line);padding:38px 0;margin-top:30px;color:#66
 <div class="service"><span class="service-num">09</span><div class="service-icon">⌘</div><h3>Simple Business Websites</h3><p>Responsive landing pages for a credible online presence.</p><a href="#contact">Get Started →</a></div>
 </div></div></section>
 
-<section class="section portfolio" id="work"><div class="wrap"><div class="eyebrow">PORTFOLIO CONCEPTS</div><h2 class="section-title">A visual standard your <em>clients can understand.</em></h2><p class="intro" style="margin-bottom:40px">These are sample concepts for presentation. Replace them with genuine client work as your portfolio grows.</p><div class="works">
-<div class="work"><span class="sample">SAMPLE</span><small>RESTAURANT</small><strong>TASTE.<br>CRAFTED.</strong><small>MENU • OFFERS • SOCIAL</small></div>
-<div class="work"><span class="sample">SAMPLE</span><small>SALON</small><strong>YOUR<br>GLOW<br>ERA.</strong><small>BEAUTY • BRANDING</small></div>
-<div class="work"><span class="sample">SAMPLE</span><small>GYM</small><strong>BUILD<br>YOUR<br>BEST.</strong><small>FITNESS • MOTIVATION</small></div>
-<div class="work"><span class="sample">SAMPLE</span><small>COACHING</small><strong>LEARN.<br>LEVEL<br>UP.</strong><small>EDUCATION • RESULTS</small></div>
-<div class="work"><span class="sample">SAMPLE</span><small>CLOTHING BRAND</small><strong>OWN<br>YOUR<br>STYLE.</strong><small>FASHION • DROP</small></div>
-<div class="work wide"><span class="sample">SAMPLE</span><small>YOUTUBE CREATOR</small><strong>STOP.<br>SCROLLING.</strong><small>THUMBNAIL • CREATOR</small></div>
-<div class="work wide"><span class="sample">SAMPLE</span><small>LOCAL BUSINESS</small><strong>MADE<br>FOR<br>YOUR CITY.</strong><small>LOCAL • PROMOTION</small></div>
+<section class="section portfolio" id="work"><div class="wrap"><div class="eyebrow">PORTFOLIO CONCEPTS</div><h2 class="section-title">Real-looking creatives. <em>Built to sell.</em></h2><p class="intro" style="margin-bottom:40px">Sample concepts created by Ravi AI Studio for different business categories. Replace these with genuine client work as your portfolio grows.</p><div class="works">
+<div class="work image-work"><img src="restaurant.webp" alt="Restaurant promotional poster sample" loading="lazy"><div class="work-overlay"><span class="sample">SAMPLE</span><small>RESTAURANT</small><strong>Food & Offers</strong></div></div>
+<div class="work image-work"><img src="salon.webp" alt="Salon promotional poster sample" loading="lazy"><div class="work-overlay"><span class="sample">SAMPLE</span><small>SALON</small><strong>Beauty & Branding</strong></div></div>
+<div class="work image-work"><img src="gym.webp" alt="Gym promotional poster sample" loading="lazy"><div class="work-overlay"><span class="sample">SAMPLE</span><small>GYM</small><strong>Fitness & Motivation</strong></div></div>
+<div class="work image-work"><img src="coaching.webp" alt="Coaching academy promotional poster sample" loading="lazy"><div class="work-overlay"><span class="sample">SAMPLE</span><small>COACHING</small><strong>Education & Results</strong></div></div>
+<div class="work image-work"><img src="travel.webp" alt="Travel agency promotional poster sample" loading="lazy"><div class="work-overlay"><span class="sample">SAMPLE</span><small>TRAVEL</small><strong>Tourism & Promotion</strong></div></div>
+<div class="work image-work wide"><img src="fashion.webp" alt="Fashion accessories promotional poster sample" loading="lazy"><div class="work-overlay"><span class="sample">SAMPLE</span><small>FASHION BRAND</small><strong>Products & Offers</strong></div></div>
+<div class="work image-work wide"><img src="furniture.webp" alt="Furniture and home decor promotional poster sample" loading="lazy"><div class="work-overlay"><span class="sample">SAMPLE</span><small>LOCAL BUSINESS</small><strong>Retail & Promotion</strong></div></div>
 </div></div></section>
 
 <section class="section" id="pricing"><div class="wrap"><div class="eyebrow">PRICING</div><h2 class="section-title">Simple packages.<br><em>No confusing agency pricing.</em></h2><div class="pricing-grid">
